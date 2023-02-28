@@ -4,6 +4,13 @@
   align-items: center;
   height: 100%;
 }
+.imagem{
+  max-width: 350px;
+    position: absolute;
+    left: 0;
+    bottom: 35%;
+    }
+    
 body,
 html {
   height: 100%;
