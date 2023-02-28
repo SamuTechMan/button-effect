@@ -1,0 +1,184 @@
+.botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+body,
+html {
+  height: 100%;
+}
+.botao1 {
+  background-color: cornsilk;
+  border-radius: 20px;
+  border: 2px solid springgreen;
+  font-size: 100px;
+  padding: 50px;
+  font-family: monospace;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.botao1 {
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.botao1:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #64748b,
+    #6b7280,
+    #71717a,
+    #737373,
+    #78716c,
+    #ef4444,
+    #f97316,
+    #f59e0b,
+    #eab308,
+    #84cc16,
+    #22c55e,
+    #10b981,
+    #14b8a6,
+    #06b6d4,
+    #0ea5e9,
+    #3b82f6,
+    #6366f1,
+    #8b5cf6,
+    #a855f7,
+    #d946ef,
+    #ec4899,
+    #f43f5e,
+    #a21caf,
+    #c026d3,
+    #86198f,
+    #701a75,
+    #e879f9,
+    #f0abfc,
+    #f5d0fe,
+    #fae8ff,
+    #fdf4ff,
+    #fdf2f8,
+    #fce7f3,
+    #fbcfe8,
+    #f9a8d4,
+    #f472b6,
+    #db2777,
+    #be185d,
+    #9d174d,
+    #831843,
+    #fff1f2,
+    #ffe4e6,
+    #fecdd3,
+    #fda4af,
+    #fb7185,
+    #e11d48,
+    #be123c,
+    #9f1239,
+    #881337,
+    #581c87,
+    #6b21a8,
+    #7e22ce,
+    #9333ea,
+    #c084fc,
+    #d8b4fe,
+    #e9d5ff,
+    #f3e8ff,
+    #faf5ff,
+    #4c1d95,
+    #5b21b6,
+    #6d28d9,
+    #7c3aed,
+    #a78bfa,
+    #c4b5fd,
+    #ddd6fe,
+    #ede9fe,
+    #f5f3ff,
+    #312e81,
+    #3730a3,
+    #4338ca,
+    #4f46e5,
+    #818cf8,
+    #a5b4fc,
+    #c7d2fe,
+    #e0e7ff,
+    #eef2ff,
+    #365314,
+    #166534,
+    #15803d,
+    #16a34a,
+    #4ade80,
+    #86efac,
+    #bbf7d0,
+    #dcfce7,
+    #f0fdf4,
+    #365314,
+    #3f6212,
+    #4d7c0f,
+    #65a30d,
+    #a3e635,
+    #bef264,
+    #d9f99d,
+    #ecfccb,
+    #f7fee7
+      );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.botao1:active {
+  color: #000;
+}
+
+.botao1:active:after {
+  background: transparent;
+}
+
+.botao1:hover:before {
+  opacity: 1;
+}
+
+.botao1:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.fundo {
+  background-color: crimson;
+}
