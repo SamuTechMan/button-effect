@@ -8,7 +8,7 @@
   max-width: 350px;
   position: absolute;
   left: 0;
-  bottom: 35%;
+  bottom: 38.8%;
 }
 
 .imagem img {
@@ -16,14 +16,12 @@
   height: auto;
 }
 
-@media only screen and (max-width: 1000px) {
-  .imagem {
-    display: none;
-  }
-}
 body,
 html {
   height: 100%;
+}
+body {
+  overflow: hidden;
 }
 .botao1 {
   background-color: cornsilk;
@@ -328,4 +326,12 @@ html {
 
 .fundo {
   background-color: #111;
+}
+@media only screen and (max-width: 1024px) {
+  .imagem {
+    display: none;
+  }
+  .botao1 {
+    font-size: 80px;
+  }
 }
